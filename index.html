@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil_Portfolio</title>
+  
+  <!-- ✅ Link external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrix-bg"></canvas>
+
+  <!-- NAVBAR -->
+ <section id="home" class="hero">
+  <div class="hero-inner">
+    <!-- LEFT: Only your photo -->
+    <div class="profile-card">
+      <div class="profile-photo">
+        <img src="profile.jpg" alt="Nikhil Attri">
+      </div>
+    </div>
+
+    <!-- RIGHT: All text/details -->
+    <div class="hero-details">
+      <h1 class="hero-name">Nikhil Attri</h1>
+      <div class="typing">Cybersecurity • Network Security • Ethical Hacking</div>
+
+      <div class="about">
+        I am a Computer Science student at VNIT Nagpur focusing on cybersecurity — 
+        penetration testing, vulnerability assessment, and secure system design. 
+        At VNIT I have access to strong research clubs, mentorship and hands-on competitions 
+        (Hackathons, CTFs) which accelerated my ability to build secure tools 
+        and collaborate with startups.
+      </div>
+
+      <div class="info-grid">
+        <div class="info">🏫 Class 10 Score: 87%</div>
+        <div class="info">🎓 Class 12 Score: 89%</div>
+        <div class="info">🌄 Passion: Mountain Travel, Badminton, Content Creation</div>
+      </div>
+
+      <div class="quick-links">
+        <strong>Quick Links</strong>
+        <div class="info-grid" style="margin-top:8px">
+          <div class="info">✉️ Email: <a href="mailto:nikhilattri096@gmail.com">nikhilattri096@gmail.com</a></div>
+          <div class="info">💻 GitHub: <a href="https://github.com/Nikhil-attri" target="_blank">github.com/Nikhil-attri</a></div>
+          <div class="info">🔗 LinkedIn: <a href="https://linkedin.com/in/nikhil-attri-096k1209" target="_blank">linkedin.com/in/nikhil-attri-096k1209</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Skills & Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="head">Programming & Scripting</div>
+        <div class="detail">
+          <ul>
+            <li>Python (scripting for pentesting & automation)</li>
+            <li>C/C++ (system-level understanding)</li>
+            <li>Java, JavaScript (tooling & web testing)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="head">Cybersecurity</div>
+        <div class="detail">
+          <ul>
+            <li>Penetration Testing (web, network)</li>
+            <li>Vulnerability Assessment & Reporting</li>
+            <li>Capture The Flag (CTF) practice</li>
+            <li>Tools: Nmap, Burp Suite, Metasploit, Wireshark</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="head">Web & Infra</div>
+        <div class="detail">
+          <ul>
+            <li>HTTP, REST APIs, OAuth</li>
+            <li>Docker & Linux environments</li>
+            <li>Basic cloud familiarity</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="head">Data Structures & Algorithms</div>
+        <div class="detail">
+          <ul>
+            <li>Graphs, Trees, File handling</li>
+            <li>Optimized C/C++ implementations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- 🔐 NETWORK SECURITY SCANNER -->
+    <div class="project-card" 
+         data-project='{
+           "title":"Network Security Scanner",
+           "desc":"A comprehensive network vulnerability scanner that automates the process of identifying open ports, detecting services, and generating detailed vulnerability reports.",
+           "features":["Port scanning with Nmap API","Service version detection","Custom vulnerability database","CSV & PDF report generation"],
+           "tech":["Python","Socket","Nmap","SQLite","Flask"],
+           "role":"Designed and implemented multi-threaded scanning logic and dynamic web interface for real-time results.",
+           "outcome":"Enhanced speed by 35% vs traditional tools; used in campus security lab for practice."
+         }'>
+      <img class="project-thumb" src="projects/netsec.jpg" alt="Network Security Scanner">
+      <div class="project-overlay">
+        <div>
+          <h4>🔐 Network Security Scanner</h4>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">Cybersecurity</span><span class="tag">Nmap</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-info"><p>Click to view project details</p></div>
+    </div>
+
+    <!-- 🚦 SMART TRAFFIC LIGHT -->
+    <div class="project-card" 
+         data-project='{
+           "title":"Smart Traffic Light",
+           "desc":"AI-powered traffic management system that detects vehicle density using computer vision and adjusts light timings automatically.",
+           "features":["Live camera feed integration","YOLOv5 object detection","Dynamic timing algorithm","Remote dashboard for traffic control"],
+           "tech":["Python","OpenCV","Flask","IoT","Machine Learning"],
+           "role":"Developed object detection pipeline and synchronization logic between multiple signals.",
+           "outcome":"Reduced idle signal time by 22% in simulation tests; integrated with cloud dashboard."
+         }'>
+      <img class="project-thumb" src="projects/traffic.jpg" alt="Smart Traffic Light">
+      <div class="project-overlay">
+        <div>
+          <h4>🚦 Smart Traffic Light</h4>
+          <div class="project-tags"><span class="tag">AI</span><span class="tag">IoT</span><span class="tag">OpenCV</span></div>
+        </div>
+      </div>
+      <div class="project-info"><p>Click to view project details</p></div>
+    </div>
+
+    <!-- 🛒 DEALSCOPE -->
+    <div class="project-card" 
+         data-project='{
+           "title":"DealScope – Smart Price Tracker",
+           "desc":"An intelligent platform for real-time product comparison and personalized price drop alerts using AI web scraping and recommendation algorithms.",
+           "features":["Multi-site product scraping","Price alert emails","User login system","Interactive dashboard with charts"],
+           "tech":["Java","React","MySQL","Node.js","Flask API"],
+           "role":"Developed backend microservices and product monitoring engine; integrated REST APIs for data sync.",
+           "outcome":"Handled 10K+ records with efficient query optimization; reduced API latency by 40%."
+         }'>
+      <img class="project-thumb" src="projects/dealscope.jpg" alt="DealScope">
+      <div class="project-overlay">
+        <div>
+          <h4>🛒 DealScope</h4>
+          <div class="project-tags"><span class="tag">AI</span><span class="tag">React</span><span class="tag">Full Stack</span></div>
+        </div>
+      </div>
+      <div class="project-info"><p>Click to view project details</p></div>
+    </div>
+
+  </div>
+
+  <!-- 🔹 MODAL POPUP FOR DETAILS -->
+  <div class="modal" id="project-modal">
+    <div class="modal-card">
+      <span class="modal-close" onclick="closeModal()">✖</span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+
+      <h4>Key Features:</h4>
+      <ul id="modal-features"></ul>
+
+      <h4>Technologies:</h4>
+      <div id="modal-tech" class="project-tags"></div>
+
+      <p><strong>Role:</strong> <span id="modal-role"></span></p>
+      <p><strong>Outcome:</strong> <span id="modal-outcome"></span></p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <h2 class="section-title">Achievements </h2>
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <h4>🏆 CODEATHON Participant</h4>
+        <p>Demonstrated algorithmic problem-solving in Internshala's challenge.</p>
+      </div>
+      <div class="achievement-card">
+        <h4>💡 Smart India Hackathon</h4>
+        <p>Developed real-world solutions; VNIT mentorship was key to rapid prototyping.</p>
+      </div>
+      <div class="achievement-card">
+        <h4>🔧 Startup Contribution</h4>
+        <p>Worked on backend modules for an aviation startup using VNIT’s resources.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-grid">
+      <div class="contact-card">Email: <a href="mailto:nikhilattri096@gmail.com">nikhilattri096@gmail.com</a></div>
+      <div class="contact-card">GitHub: <a href="https://github.com/Nikhil-attri" target="_blank">github.com/Nikhil-attri</a></div>
+      <div class="contact-card">LinkedIn: <a href="https://linkedin.com/in/nikhil-attri-096k1209" target="_blank">linkedin.com/in/nikhil-attri-096k1209</a></div>
+
+      <div class="hobby">
+        <img src="hobby/mountain.jpg" alt="mountain" />
+        <div>
+          <strong>Passion:</strong>
+          <p>Exploring mountain landscapes — inspires focus and creativity.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-card">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h3 id="modalTitle"></h3>
+        <div id="modalClose" class="modal-close">✕</div>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ✅ Link external JavaScript -->
+  <script src="script.js"></script>
+  <script>
+  const modal = document.getElementById("project-modal");
+  const title = document.getElementById("modal-title");
+  const desc = document.getElementById("modal-desc");
+  const features = document.getElementById("modal-features");
+  const tech = document.getElementById("modal-tech");
+  const role = document.getElementById("modal-role");
+  const outcome = document.getElementById("modal-outcome");
+
+  document.querySelectorAll(".project-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const data = JSON.parse(card.dataset.project);
+      title.textContent = data.title;
+      desc.textContent = data.desc;
+      features.innerHTML = data.features.map(f => `<li>${f}</li>`).join("");
+      tech.innerHTML = data.tech.map(t => `<span class='tag'>${t}</span>`).join("");
+      role.textContent = data.role;
+      outcome.textContent = data.outcome;
+      modal.classList.add("show");
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove("show");
+  }
+
+  // Close on background click
+  modal.addEventListener("click", e => {
+    if (e.target === modal) closeModal();
+  });
+</script>
+
+</body>
+</html>
